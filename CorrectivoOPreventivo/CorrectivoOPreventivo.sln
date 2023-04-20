@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CorrectivoOPreventivo", "CorrectivoOPreventivo\CorrectivoOPreventivo.csproj", "{659058F4-25E8-438B-8C81-547E371C004D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{659058F4-25E8-438B-8C81-547E371C004D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{659058F4-25E8-438B-8C81-547E371C004D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{659058F4-25E8-438B-8C81-547E371C004D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{659058F4-25E8-438B-8C81-547E371C004D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3E1142F5-2DC7-4233-B411-9433631B0B7C}
+	EndGlobalSection
+EndGlobal
