@@ -30,6 +30,8 @@ namespace CorrectivoOPreventivo
 
             SimulacionCorrectiva();
 
+            SimulacionPreventiva();
+
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -49,6 +51,21 @@ namespace CorrectivoOPreventivo
 
             simulacion.CalcularCorrectivo(cant, desde, hasta, dgvCorrectivo);
 
+
+        }
+
+        private void SimulacionPreventiva()
+        {
+
+            var simulacion = new MantenimientoPreventivo();
+
+            simulacion.CalcularPreventivo(cant, desde, hasta, dgvPreventivo);
+
+
+        }
+
+        private void dgvPreventivo_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
     }

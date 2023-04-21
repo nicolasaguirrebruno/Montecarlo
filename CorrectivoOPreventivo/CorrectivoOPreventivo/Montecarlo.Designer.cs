@@ -43,7 +43,23 @@
             costo_reparacion = new DataGridViewTextBoxColumn();
             acumulacion_costo = new DataGridViewTextBoxColumn();
             label1 = new Label();
+            label2 = new Label();
+            dgvPreventivo = new DataGridView();
+            dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn2 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn3 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn4 = new DataGridViewTextBoxColumn();
+            Dias_mantenimiento = new DataGridViewTextBoxColumn();
+            Dia_mantenimiento = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn5 = new DataGridViewTextBoxColumn();
+            se_mantuvo = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn6 = new DataGridViewTextBoxColumn();
+            ultimo_dia_mantenido = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn7 = new DataGridViewTextBoxColumn();
+            costo_mantenimiento = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn8 = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dgvCorrectivo).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvPreventivo).BeginInit();
             SuspendLayout();
             // 
             // dgvCorrectivo
@@ -54,7 +70,7 @@
             dgvCorrectivo.Name = "dgvCorrectivo";
             dgvCorrectivo.RowHeadersWidth = 51;
             dgvCorrectivo.RowTemplate.Height = 29;
-            dgvCorrectivo.Size = new Size(1053, 745);
+            dgvCorrectivo.Size = new Size(1053, 341);
             dgvCorrectivo.TabIndex = 0;
             dgvCorrectivo.CellContentClick += dgvCorrectivo_CellContentClick;
             // 
@@ -133,14 +149,143 @@
             label1.TabIndex = 1;
             label1.Text = "Mantenimiento Correctivo";
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Arial", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.ForeColor = Color.Coral;
+            label2.Location = new Point(47, 488);
+            label2.Name = "label2";
+            label2.Size = new Size(438, 40);
+            label2.TabIndex = 3;
+            label2.Text = "Mantenimiento Preventivo";
+            // 
+            // dgvPreventivo
+            // 
+            dgvPreventivo.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvPreventivo.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn1, dataGridViewTextBoxColumn2, dataGridViewTextBoxColumn3, dataGridViewTextBoxColumn4, Dias_mantenimiento, Dia_mantenimiento, dataGridViewTextBoxColumn5, se_mantuvo, dataGridViewTextBoxColumn6, ultimo_dia_mantenido, dataGridViewTextBoxColumn7, costo_mantenimiento, dataGridViewTextBoxColumn8 });
+            dgvPreventivo.Location = new Point(47, 561);
+            dgvPreventivo.Name = "dgvPreventivo";
+            dgvPreventivo.RowHeadersWidth = 51;
+            dgvPreventivo.RowTemplate.Height = 29;
+            dgvPreventivo.Size = new Size(1677, 341);
+            dgvPreventivo.TabIndex = 2;
+            dgvPreventivo.CellContentClick += dgvPreventivo_CellContentClick;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            dataGridViewTextBoxColumn1.HeaderText = "Dia";
+            dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            dataGridViewTextBoxColumn1.ReadOnly = true;
+            dataGridViewTextBoxColumn1.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            dataGridViewTextBoxColumn2.HeaderText = "RND Averia";
+            dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            dataGridViewTextBoxColumn2.ReadOnly = true;
+            dataGridViewTextBoxColumn2.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            dataGridViewTextBoxColumn3.HeaderText = "Dias Para El Reparo";
+            dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            dataGridViewTextBoxColumn3.ReadOnly = true;
+            dataGridViewTextBoxColumn3.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            dataGridViewTextBoxColumn4.HeaderText = "Dia A Reparar";
+            dataGridViewTextBoxColumn4.MinimumWidth = 6;
+            dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            dataGridViewTextBoxColumn4.ReadOnly = true;
+            dataGridViewTextBoxColumn4.Width = 125;
+            // 
+            // Dias_mantenimiento
+            // 
+            Dias_mantenimiento.HeaderText = "Dias Para El Mantenimiento";
+            Dias_mantenimiento.MinimumWidth = 6;
+            Dias_mantenimiento.Name = "Dias_mantenimiento";
+            Dias_mantenimiento.ReadOnly = true;
+            Dias_mantenimiento.Width = 125;
+            // 
+            // Dia_mantenimiento
+            // 
+            Dia_mantenimiento.HeaderText = "Dia De Mantenimiento";
+            Dia_mantenimiento.MinimumWidth = 6;
+            Dia_mantenimiento.Name = "Dia_mantenimiento";
+            Dia_mantenimiento.ReadOnly = true;
+            Dia_mantenimiento.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            dataGridViewTextBoxColumn5.HeaderText = "Se reparo";
+            dataGridViewTextBoxColumn5.MinimumWidth = 6;
+            dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            dataGridViewTextBoxColumn5.ReadOnly = true;
+            dataGridViewTextBoxColumn5.Width = 125;
+            // 
+            // se_mantuvo
+            // 
+            se_mantuvo.HeaderText = "Se mantuvo";
+            se_mantuvo.MinimumWidth = 6;
+            se_mantuvo.Name = "se_mantuvo";
+            se_mantuvo.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            dataGridViewTextBoxColumn6.HeaderText = "Ultimo Dia Arreglado";
+            dataGridViewTextBoxColumn6.MinimumWidth = 6;
+            dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            dataGridViewTextBoxColumn6.ReadOnly = true;
+            dataGridViewTextBoxColumn6.Width = 125;
+            // 
+            // ultimo_dia_mantenido
+            // 
+            ultimo_dia_mantenido.HeaderText = "Ultimo Dia Mantenido";
+            ultimo_dia_mantenido.MinimumWidth = 6;
+            ultimo_dia_mantenido.Name = "ultimo_dia_mantenido";
+            ultimo_dia_mantenido.ReadOnly = true;
+            ultimo_dia_mantenido.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            dataGridViewTextBoxColumn7.HeaderText = "Costo de reparacion";
+            dataGridViewTextBoxColumn7.MinimumWidth = 6;
+            dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            dataGridViewTextBoxColumn7.Width = 125;
+            // 
+            // costo_mantenimiento
+            // 
+            costo_mantenimiento.HeaderText = "Costo De Mantenimiento";
+            costo_mantenimiento.MinimumWidth = 6;
+            costo_mantenimiento.Name = "costo_mantenimiento";
+            costo_mantenimiento.ReadOnly = true;
+            costo_mantenimiento.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            dataGridViewTextBoxColumn8.HeaderText = "Acumulacion Costo";
+            dataGridViewTextBoxColumn8.MinimumWidth = 6;
+            dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            dataGridViewTextBoxColumn8.ReadOnly = true;
+            dataGridViewTextBoxColumn8.Width = 125;
+            // 
             // Montecarlo
             // 
             BackColor = Color.PeachPuff;
-            ClientSize = new Size(1293, 926);
+            ClientSize = new Size(1799, 926);
+            Controls.Add(label2);
+            Controls.Add(dgvPreventivo);
             Controls.Add(label1);
             Controls.Add(dgvCorrectivo);
             Name = "Montecarlo";
             ((System.ComponentModel.ISupportInitialize)dgvCorrectivo).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvPreventivo).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -158,5 +303,20 @@
         private DataGridViewTextBoxColumn Ultimo_dia_arreglado;
         private DataGridViewTextBoxColumn costo_reparacion;
         private DataGridViewTextBoxColumn acumulacion_costo;
+        private Label label2;
+        private DataGridView dgvPreventivo;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private DataGridViewTextBoxColumn Dias_mantenimiento;
+        private DataGridViewTextBoxColumn Dia_mantenimiento;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private DataGridViewTextBoxColumn se_mantuvo;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private DataGridViewTextBoxColumn ultimo_dia_mantenido;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private DataGridViewTextBoxColumn costo_mantenimiento;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
     }
 }
