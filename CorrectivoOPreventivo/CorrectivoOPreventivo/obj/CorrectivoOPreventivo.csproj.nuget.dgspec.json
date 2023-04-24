@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Facultad\\Cuarto\\Simulacion\\TPS\\TestMontecarlo\\CorrectivoOPreventivo\\CorrectivoOPreventivo\\CorrectivoOPreventivo.csproj": {}
+    "C:\\Users\\usuario\\Desktop\\UTN-SISTEMAS\\4to\\sim\\TPs\\TP3\\Montecarlo\\CorrectivoOPreventivo\\CorrectivoOPreventivo\\CorrectivoOPreventivo.csproj": {}
   },
   "projects": {
-    "D:\\Facultad\\Cuarto\\Simulacion\\TPS\\TestMontecarlo\\CorrectivoOPreventivo\\CorrectivoOPreventivo\\CorrectivoOPreventivo.csproj": {
+    "C:\\Users\\usuario\\Desktop\\UTN-SISTEMAS\\4to\\sim\\TPs\\TP3\\Montecarlo\\CorrectivoOPreventivo\\CorrectivoOPreventivo\\CorrectivoOPreventivo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Facultad\\Cuarto\\Simulacion\\TPS\\TestMontecarlo\\CorrectivoOPreventivo\\CorrectivoOPreventivo\\CorrectivoOPreventivo.csproj",
+        "projectUniqueName": "C:\\Users\\usuario\\Desktop\\UTN-SISTEMAS\\4to\\sim\\TPs\\TP3\\Montecarlo\\CorrectivoOPreventivo\\CorrectivoOPreventivo\\CorrectivoOPreventivo.csproj",
         "projectName": "CorrectivoOPreventivo",
-        "projectPath": "D:\\Facultad\\Cuarto\\Simulacion\\TPS\\TestMontecarlo\\CorrectivoOPreventivo\\CorrectivoOPreventivo\\CorrectivoOPreventivo.csproj",
-        "packagesPath": "C:\\Users\\Nicolas\\.nuget\\packages\\",
-        "outputPath": "D:\\Facultad\\Cuarto\\Simulacion\\TPS\\TestMontecarlo\\CorrectivoOPreventivo\\CorrectivoOPreventivo\\obj\\",
+        "projectPath": "C:\\Users\\usuario\\Desktop\\UTN-SISTEMAS\\4to\\sim\\TPs\\TP3\\Montecarlo\\CorrectivoOPreventivo\\CorrectivoOPreventivo\\CorrectivoOPreventivo.csproj",
+        "packagesPath": "C:\\Users\\usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\usuario\\Desktop\\UTN-SISTEMAS\\4to\\sim\\TPs\\TP3\\Montecarlo\\CorrectivoOPreventivo\\CorrectivoOPreventivo\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Nicolas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -58,7 +63,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
