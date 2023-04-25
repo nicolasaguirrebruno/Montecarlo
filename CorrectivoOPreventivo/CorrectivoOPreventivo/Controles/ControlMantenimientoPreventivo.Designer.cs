@@ -77,7 +77,7 @@
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn1.HeaderText = "Dia";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Día";
             this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
@@ -85,7 +85,7 @@
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn2.HeaderText = "RND Averia";
+            this.dataGridViewTextBoxColumn2.HeaderText = "RND Avería";
             this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.ReadOnly = true;
@@ -93,7 +93,7 @@
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn3.HeaderText = "Dias Para El Reparo";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Días para el Reparo";
             this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             this.dataGridViewTextBoxColumn3.ReadOnly = true;
@@ -101,7 +101,7 @@
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn4.HeaderText = "Dia A Reparar";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Día a Reparar";
             this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.ReadOnly = true;
@@ -109,7 +109,7 @@
             // Dias_mantenimiento
             // 
             this.Dias_mantenimiento.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Dias_mantenimiento.HeaderText = "Dias Para El Mantenimiento";
+            this.Dias_mantenimiento.HeaderText = "Días para el Mantenimiento";
             this.Dias_mantenimiento.MinimumWidth = 6;
             this.Dias_mantenimiento.Name = "Dias_mantenimiento";
             this.Dias_mantenimiento.ReadOnly = true;
@@ -117,7 +117,7 @@
             // Dia_mantenimiento
             // 
             this.Dia_mantenimiento.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Dia_mantenimiento.HeaderText = "Dia De Mantenimiento";
+            this.Dia_mantenimiento.HeaderText = "Día de Mantenimiento";
             this.Dia_mantenimiento.MinimumWidth = 6;
             this.Dia_mantenimiento.Name = "Dia_mantenimiento";
             this.Dia_mantenimiento.ReadOnly = true;
@@ -125,7 +125,7 @@
             // dataGridViewTextBoxColumn5
             // 
             this.dataGridViewTextBoxColumn5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn5.HeaderText = "Se reparo";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Se reparó";
             this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             this.dataGridViewTextBoxColumn5.ReadOnly = true;
@@ -141,7 +141,7 @@
             // dataGridViewTextBoxColumn6
             // 
             this.dataGridViewTextBoxColumn6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn6.HeaderText = "Ultimo Dia Arreglado";
+            this.dataGridViewTextBoxColumn6.HeaderText = "Ultimo Día Arreglado";
             this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             this.dataGridViewTextBoxColumn6.ReadOnly = true;
@@ -149,7 +149,7 @@
             // ultimo_dia_mantenido
             // 
             this.ultimo_dia_mantenido.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ultimo_dia_mantenido.HeaderText = "Ultimo Dia Mantenido";
+            this.ultimo_dia_mantenido.HeaderText = "Ultimo Día Mantenido";
             this.ultimo_dia_mantenido.MinimumWidth = 6;
             this.ultimo_dia_mantenido.Name = "ultimo_dia_mantenido";
             this.ultimo_dia_mantenido.ReadOnly = true;
@@ -157,7 +157,7 @@
             // dataGridViewTextBoxColumn7
             // 
             this.dataGridViewTextBoxColumn7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn7.HeaderText = "Costo de reparacion";
+            this.dataGridViewTextBoxColumn7.HeaderText = "Costo de reparación";
             this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
             this.dataGridViewTextBoxColumn7.ReadOnly = true;
@@ -165,7 +165,7 @@
             // costo_mantenimiento
             // 
             this.costo_mantenimiento.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.costo_mantenimiento.HeaderText = "Costo De Mantenimiento";
+            this.costo_mantenimiento.HeaderText = "Costo de Mantenimiento";
             this.costo_mantenimiento.MinimumWidth = 6;
             this.costo_mantenimiento.Name = "costo_mantenimiento";
             this.costo_mantenimiento.ReadOnly = true;
@@ -173,7 +173,7 @@
             // dataGridViewTextBoxColumn8
             // 
             this.dataGridViewTextBoxColumn8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn8.HeaderText = "Acumulacion Costo";
+            this.dataGridViewTextBoxColumn8.HeaderText = "Acumulación Costo";
             this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             this.dataGridViewTextBoxColumn8.ReadOnly = true;

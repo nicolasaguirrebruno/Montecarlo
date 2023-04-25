@@ -67,7 +67,7 @@
             // dia
             // 
             this.dia.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dia.HeaderText = "Dia";
+            this.dia.HeaderText = "Día";
             this.dia.MinimumWidth = 6;
             this.dia.Name = "dia";
             this.dia.ReadOnly = true;
@@ -75,7 +75,7 @@
             // rnd_averia
             // 
             this.rnd_averia.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.rnd_averia.HeaderText = "RND Averia";
+            this.rnd_averia.HeaderText = "RND Avería";
             this.rnd_averia.MinimumWidth = 6;
             this.rnd_averia.Name = "rnd_averia";
             this.rnd_averia.ReadOnly = true;
@@ -83,7 +83,7 @@
             // dia_para_reparo
             // 
             this.dia_para_reparo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dia_para_reparo.HeaderText = "Dias Para El Reparo";
+            this.dia_para_reparo.HeaderText = "Días Para El Reparo";
             this.dia_para_reparo.MinimumWidth = 6;
             this.dia_para_reparo.Name = "dia_para_reparo";
             this.dia_para_reparo.ReadOnly = true;
@@ -91,7 +91,7 @@
             // dia_reparar
             // 
             this.dia_reparar.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dia_reparar.HeaderText = "Dia A Reparar";
+            this.dia_reparar.HeaderText = "Día A Reparar";
             this.dia_reparar.MinimumWidth = 6;
             this.dia_reparar.Name = "dia_reparar";
             this.dia_reparar.ReadOnly = true;
@@ -99,7 +99,7 @@
             // se_reparo
             // 
             this.se_reparo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.se_reparo.HeaderText = "Se reparo";
+            this.se_reparo.HeaderText = "Se reparó";
             this.se_reparo.MinimumWidth = 6;
             this.se_reparo.Name = "se_reparo";
             this.se_reparo.ReadOnly = true;
@@ -107,7 +107,7 @@
             // Ultimo_dia_arreglado
             // 
             this.Ultimo_dia_arreglado.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Ultimo_dia_arreglado.HeaderText = "Ultimo Dia Arreglado";
+            this.Ultimo_dia_arreglado.HeaderText = "Ultimo Día Arreglado";
             this.Ultimo_dia_arreglado.MinimumWidth = 6;
             this.Ultimo_dia_arreglado.Name = "Ultimo_dia_arreglado";
             this.Ultimo_dia_arreglado.ReadOnly = true;
@@ -115,14 +115,14 @@
             // costo_reparacion
             // 
             this.costo_reparacion.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.costo_reparacion.HeaderText = "Costo de reparacion";
+            this.costo_reparacion.HeaderText = "Costo de reparación";
             this.costo_reparacion.MinimumWidth = 6;
             this.costo_reparacion.Name = "costo_reparacion";
             // 
             // acumulacion_costo
             // 
             this.acumulacion_costo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.acumulacion_costo.HeaderText = "Acumulacion Costo";
+            this.acumulacion_costo.HeaderText = "Acumulación Costo";
             this.acumulacion_costo.MinimumWidth = 6;
             this.acumulacion_costo.Name = "acumulacion_costo";
             this.acumulacion_costo.ReadOnly = true;
