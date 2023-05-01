@@ -311,7 +311,9 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MinimumSize = new System.Drawing.Size(1364, 600);
             this.Name = "IngresoDatos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "IngresoDatos";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.IngresoDatos_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
