@@ -40,7 +40,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvCorrectivo)).BeginInit();
             this.SuspendLayout();
             // 
-            // dgvCorrectivo
+            // acumCorrectivo
             // 
             this.dgvCorrectivo.AllowUserToAddRows = false;
             this.dgvCorrectivo.AllowUserToDeleteRows = false;
@@ -58,7 +58,7 @@
             this.dgvCorrectivo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvCorrectivo.Location = new System.Drawing.Point(0, 0);
             this.dgvCorrectivo.MinimumSize = new System.Drawing.Size(1053, 341);
-            this.dgvCorrectivo.Name = "dgvCorrectivo";
+            this.dgvCorrectivo.Name = "acumCorrectivo";
             this.dgvCorrectivo.RowHeadersWidth = 51;
             this.dgvCorrectivo.RowTemplate.Height = 29;
             this.dgvCorrectivo.Size = new System.Drawing.Size(1053, 341);

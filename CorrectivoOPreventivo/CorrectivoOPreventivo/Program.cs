@@ -12,6 +12,8 @@ namespace CorrectivoOPreventivo
         public static double hasta = -1;
         public static bool mostrar = false;
         public static double[] probabilidades = { 0.25, 0.7, 0.9, 1 };
+        public static double acumCorrectivo;
+        public static double acumPreventivo;
 
 
 

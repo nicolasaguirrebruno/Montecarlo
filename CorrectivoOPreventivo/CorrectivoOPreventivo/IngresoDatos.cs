@@ -19,6 +19,7 @@ namespace CorrectivoOPreventivo
         private Boolean mostrar = false;
         private Control correctivo;
         private Control preventivo;
+        private Control conclusion;
         private int controlSeleccionado;
         public IngresoDatos()
         {
@@ -57,6 +58,7 @@ namespace CorrectivoOPreventivo
             if (ValidarInputs())
             {
                 CargarValores();
+                btnConclusion.Enabled = true;
             }
            
         }
@@ -97,6 +99,8 @@ namespace CorrectivoOPreventivo
             this.preventivo.Dock = DockStyle.Fill;
             this.correctivo = new ControlMantenimientoCorrectivo();
             this.correctivo.Dock = DockStyle.Fill;
+            this.conclusion = new ControlConclusion();
+            this.conclusion.Dock = DockStyle.Fill;
             //generamos la simulacion
             CargarSimulacion();
         }
@@ -111,10 +115,14 @@ namespace CorrectivoOPreventivo
                 this.pnSimulacion.Controls.Add(this.correctivo);
                 
             }
-            else
+            else if(controlSeleccionado == (int)Mantenimientos.preventivo)
             {
                 this.pnSimulacion.Controls.Add(this.preventivo);
 
+            }
+            else if(controlSeleccionado == (int)Mantenimientos.conclusion)
+            {
+                this.pnSimulacion.Controls.Add(this.conclusion);
             }
           
         }

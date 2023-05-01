@@ -62,7 +62,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvPreventivo)).BeginInit();
             this.SuspendLayout();
             // 
-            // dgvCorrectivo
+            // acumCorrectivo
             // 
             this.dgvCorrectivo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCorrectivo.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -76,7 +76,7 @@
             this.acumulacion_costo});
             this.dgvCorrectivo.Location = new System.Drawing.Point(47, 117);
             this.dgvCorrectivo.MinimumSize = new System.Drawing.Size(1053, 341);
-            this.dgvCorrectivo.Name = "dgvCorrectivo";
+            this.dgvCorrectivo.Name = "acumCorrectivo";
             this.dgvCorrectivo.RowHeadersWidth = 51;
             this.dgvCorrectivo.RowTemplate.Height = 29;
             this.dgvCorrectivo.Size = new System.Drawing.Size(1053, 341);
@@ -169,7 +169,7 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Mantenimiento Preventivo";
             // 
-            // dgvPreventivo
+            // acumPreventivo
             // 
             this.dgvPreventivo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPreventivo.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -187,7 +187,7 @@
             this.costo_mantenimiento,
             this.dataGridViewTextBoxColumn8});
             this.dgvPreventivo.Location = new System.Drawing.Point(47, 561);
-            this.dgvPreventivo.Name = "dgvPreventivo";
+            this.dgvPreventivo.Name = "acumPreventivo";
             this.dgvPreventivo.RowHeadersWidth = 51;
             this.dgvPreventivo.RowTemplate.Height = 29;
             this.dgvPreventivo.Size = new System.Drawing.Size(1677, 341);

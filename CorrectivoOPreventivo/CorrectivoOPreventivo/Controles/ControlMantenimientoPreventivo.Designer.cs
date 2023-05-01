@@ -45,7 +45,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvPreventivo)).BeginInit();
             this.SuspendLayout();
             // 
-            // dgvPreventivo
+            // acumPreventivo
             // 
             this.dgvPreventivo.AllowUserToAddRows = false;
             this.dgvPreventivo.AllowUserToDeleteRows = false;
@@ -67,7 +67,7 @@
             this.dataGridViewTextBoxColumn8});
             this.dgvPreventivo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvPreventivo.Location = new System.Drawing.Point(0, 0);
-            this.dgvPreventivo.Name = "dgvPreventivo";
+            this.dgvPreventivo.Name = "acumPreventivo";
             this.dgvPreventivo.ReadOnly = true;
             this.dgvPreventivo.RowHeadersWidth = 51;
             this.dgvPreventivo.RowTemplate.Height = 29;

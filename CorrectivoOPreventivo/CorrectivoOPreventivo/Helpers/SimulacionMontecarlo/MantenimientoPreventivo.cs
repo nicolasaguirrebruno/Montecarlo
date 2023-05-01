@@ -270,6 +270,7 @@ namespace CorrectivoOPreventivo.Helpers.SimulacionMontecarlo
                 if (i == cant && i > hasta)
                 {
                     EstablecerFilaDataGridView(preventivo, filaActual);
+                    Program.acumPreventivo = filaActual.Item13;
                 }
 
 

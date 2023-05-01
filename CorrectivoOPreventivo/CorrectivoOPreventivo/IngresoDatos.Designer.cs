@@ -252,6 +252,7 @@
             // 
             this.btnConclusion.BackColor = System.Drawing.Color.Coral;
             this.btnConclusion.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnConclusion.Enabled = false;
             this.btnConclusion.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.btnConclusion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConclusion.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
