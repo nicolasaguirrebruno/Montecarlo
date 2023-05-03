@@ -12,11 +12,14 @@ namespace CorrectivoOPreventivo.Helpers.SimulacionMontecarlo
     internal class MantenimientoCorrectivo
     {
 
-        public int CalcularDiaArreglo(double rnd) {
+        public int CalcularDiaArreglo(double rnd) 
+        {
         
-            for (int i = 0; i < Program.probabilidades.Length; i++) {
+            for (int i = 0; i < Program.probabilidades.Length; i++) 
+            {
 
-                if (rnd <= Program.probabilidades[i]) {
+                if (rnd <= Program.probabilidades[i]) 
+                {
 
                     return i + 4;
                 }
@@ -52,9 +55,9 @@ namespace CorrectivoOPreventivo.Helpers.SimulacionMontecarlo
         }
       
 
-        public void CalcularCorrectivo(double cant, double desde, double hasta, DataGridView correctivo) {
+        public void CalcularCorrectivo(double cant, double desde, double hasta, DataGridView correctivo) 
+        {
             Random rand = new Random();
-
 
             var filaAnterior = (0, 0.0, 0, 0, "",0, 0.0, 0.0);
             var filaActual = (0, 0.0,0, 0, "",0, 0.0, 0.0);

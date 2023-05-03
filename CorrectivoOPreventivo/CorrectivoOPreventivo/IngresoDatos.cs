@@ -21,38 +21,13 @@ namespace CorrectivoOPreventivo
         private Control preventivo;
         private Control conclusion;
         private int controlSeleccionado;
+
         public IngresoDatos()
         {
             InitializeComponent();
           
         }
-        /**
-        private void changeEnabled(Boolean condition)
-        {
-            // Todo este metodo deberia desaparecer porque en un principio yo entendi que el mandar rangos era opcional pero despues en la presentacion del tp2 el profe nos dijo que siempre vas a tener que mandar un rango
-            // Por  tanto esto no deberia estar y deberia sacarse el check. Lo que si faltan las validaciones.
-            lblDesde.Enabled = condition;
-            lblHasta.Enabled = condition;
-            inputDesde.Enabled = condition;
-            inputHasta.Enabled = condition;
-
-            if (!condition)
-            {
-
-                inputDesde.Text = "";
-                inputHasta.Text = "";
-
-            }
-        }
-
-        private void chkMostrar_CheckedChanged(object sender, EventArgs e)
-        {
-            changeEnabled(chkMostrar.Checked);
-
-
-        }
-        **/
-
+        
         private void btnInitializeSimulation_Click_1(object sender, EventArgs e)
         {
             if (ValidarInputs())
@@ -63,19 +38,20 @@ namespace CorrectivoOPreventivo
             }
            
         }
+
         private void ReiniciarContadores()
         {
+            
             Program.acumCorrectivo = 0;
-             Program.acumPreventivo =0;
+            Program.acumPreventivo = 0;
 
-        Program.DiasPerdidosCorrectivoMC=0;
-        Program.DiasPerdidosCorrectivoMP = 0;
+            Program.DiasPerdidosCorrectivoMC = 0;
+            Program.DiasPerdidosCorrectivoMP = 0;
 
+            Program.DiasPerdidosMantenimiento = 0;
             
-            
-        Program.DiasPerdidosMantenimiento = 0;
-            
-    }
+        }
+
         private bool ValidarInputs()
         {
             // valida que todo lo ingresado no este vacio
