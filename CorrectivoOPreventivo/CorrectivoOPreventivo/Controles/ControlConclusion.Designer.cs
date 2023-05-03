@@ -128,7 +128,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(662, 25);
             this.label4.TabIndex = 13;
-            this.label4.Text = "Cantidad de horas perdidas por dia por averia con mantenimiento correctivo";
+            this.label4.Text = "Cantidad de horas perdidas por día por avería con mantenimiento correctivo";
             // 
             // label5
             // 
@@ -178,7 +178,7 @@
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(465, 20);
             this.label9.TabIndex = 22;
-            this.label9.Text = "Promedio de dias haciendo reparaciones para el mantenimiento Preventivo:";
+            this.label9.Text = "Promedio de días haciendo reparaciones para el mantenimiento Preventivo:";
             // 
             // lblDiasReparacionesMP
             // 
@@ -206,9 +206,9 @@
             this.label12.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label12.Location = new System.Drawing.Point(67, 289);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(462, 20);
+            this.label12.Size = new System.Drawing.Size(467, 20);
             this.label12.TabIndex = 19;
-            this.label12.Text = "Promedio de dias haciendo reparaciones para el mantenimiento Correctivo:";
+            this.label12.Text = "Porcentaje de días haciendo reparaciones para el mantenimiento Correctivo:";
             this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // label13
@@ -217,9 +217,9 @@
             this.label13.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label13.Location = new System.Drawing.Point(67, 255);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(356, 25);
+            this.label13.Size = new System.Drawing.Size(364, 25);
             this.label13.TabIndex = 18;
-            this.label13.Text = "Promedio de dias haciendo reparaciones";
+            this.label13.Text = "Porcentaje de días haciendo reparaciones";
             // 
             // lblDiasPreventivo
             // 
@@ -237,9 +237,9 @@
             this.label17.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label17.Location = new System.Drawing.Point(67, 400);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(399, 20);
+            this.label17.Size = new System.Drawing.Size(404, 20);
             this.label17.TabIndex = 24;
-            this.label17.Text = "El promedio de dias haciendo mantenimiento Preventivo fue de: ";
+            this.label17.Text = "El porcentaje de días haciendo mantenimiento Preventivo fue de: ";
             this.label17.Click += new System.EventHandler(this.label17_Click);
             // 
             // label18
@@ -248,9 +248,9 @@
             this.label18.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label18.Location = new System.Drawing.Point(67, 361);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(474, 25);
+            this.label18.Size = new System.Drawing.Size(482, 25);
             this.label18.TabIndex = 23;
-            this.label18.Text = "Promedio de dias haciendo mantenimiento Preventivo";
+            this.label18.Text = "Porcentaje de días haciendo mantenimiento Preventivo";
             // 
             // ControlConclusion
             // 

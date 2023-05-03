@@ -57,12 +57,25 @@ namespace CorrectivoOPreventivo
         {
             if (ValidarInputs())
             {
+                ReiniciarContadores();
                 CargarValores();
                 btnConclusion.Enabled = true;
             }
            
         }
+        private void ReiniciarContadores()
+        {
+            Program.acumCorrectivo = 0;
+             Program.acumPreventivo =0;
 
+        Program.DiasPerdidosCorrectivoMC=0;
+        Program.DiasPerdidosCorrectivoMP = 0;
+
+            
+            
+        Program.DiasPerdidosMantenimiento = 0;
+            
+    }
         private bool ValidarInputs()
         {
             // valida que todo lo ingresado no este vacio

@@ -37,9 +37,9 @@ namespace CorrectivoOPreventivo.Helpers.SimulacionMontecarlo
 
             miControl.lblHorasMC.Text = (Convert.ToInt64(Program.DiasPerdidosCorrectivoMC) * 16).ToString() + "Hs";
             miControl.lblHorasMP.Text = (Convert.ToInt64(Program.DiasPerdidosCorrectivoMP) * 16).ToString() + "Hs";
-            miControl.lblDiasReparacionesMP.Text = (Convert.ToDouble(Program.DiasPerdidosCorrectivoMP) / numeroDias).ToString();
-            miControl.lblDiasReparacionesMC.Text = (Convert.ToDouble(Program.DiasPerdidosCorrectivoMC) / numeroDias).ToString();
-            miControl.lblDiasPreventivo.Text = (Convert.ToDouble(Program.DiasPerdidosMantenimiento) / numeroDias).ToString();
+            miControl.lblDiasReparacionesMP.Text = ((Double)Math.Truncate((Convert.ToDouble(Program.DiasPerdidosCorrectivoMP) *100 / numeroDias)*10_000)/10_000).ToString() +"%";
+            miControl.lblDiasReparacionesMC.Text = ((Double)Math.Truncate((Convert.ToDouble(Program.DiasPerdidosCorrectivoMC) *100/ numeroDias) * 10_000)/ 10_000).ToString() + "%";
+            miControl.lblDiasPreventivo.Text = ((Double)Math.Truncate((Convert.ToDouble(Program.DiasPerdidosMantenimiento) *100/ numeroDias) * 10_000) / 10_000).ToString() +"%";
         }
     }
 }

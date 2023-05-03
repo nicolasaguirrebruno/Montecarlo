@@ -141,6 +141,7 @@
             // 
             this.btnInitializeSimulation.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnInitializeSimulation.BackColor = System.Drawing.Color.Coral;
+            this.btnInitializeSimulation.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnInitializeSimulation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInitializeSimulation.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnInitializeSimulation.ForeColor = System.Drawing.Color.Transparent;
@@ -251,6 +252,7 @@
             // btnConclusion
             // 
             this.btnConclusion.BackColor = System.Drawing.Color.Coral;
+            this.btnConclusion.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnConclusion.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnConclusion.Enabled = false;
             this.btnConclusion.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
@@ -269,6 +271,7 @@
             // btnPreventivo
             // 
             this.btnPreventivo.BackColor = System.Drawing.Color.Coral;
+            this.btnPreventivo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPreventivo.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnPreventivo.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.btnPreventivo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -286,6 +289,7 @@
             // btnCorrectivo
             // 
             this.btnCorrectivo.BackColor = System.Drawing.Color.Coral;
+            this.btnCorrectivo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCorrectivo.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnCorrectivo.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.btnCorrectivo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
