@@ -23,7 +23,7 @@ namespace CorrectivoOPreventivo.Controles
         {
             var simulacion = new MantenimientoPreventivo();
 
-            simulacion.CalcularPreventivo(Program.dias, Program.desde, Program.hasta, dgvPreventivo);
+            simulacion.CalcularPreventivo(Program.dias, Program.desde, Program.hasta, this.dgvPreventivo);
         }
        
     }
