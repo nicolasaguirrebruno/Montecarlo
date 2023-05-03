@@ -15,6 +15,11 @@ namespace CorrectivoOPreventivo
         public static double acumCorrectivo;
         public static double acumPreventivo;
 
+        public static double DiasPerdidosCorrectivoMC;
+        public static double DiasPerdidosCorrectivoMP;
+
+        
+        public static double DiasPerdidosMantenimiento;
 
 
         [STAThread]

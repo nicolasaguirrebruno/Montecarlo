@@ -9,15 +9,15 @@ namespace CorrectivoOPreventivo.Helpers.SimulacionMontecarlo
 {
     internal class Conclusion
     {
-
-        public void CalcularMetricas(double dias, double acumCorrectivo, double acumPreventivo, Control ctrlConclusion)
+        private int numeroDias;
+        public void CalcularMetricas(double dias, double acumCorrectivo, double acumPreventivo, ControlConclusion ctrlConclusion)
         {
-            int numeroDias = (int)Convert.ToInt64(dias) ;
+            this.numeroDias = (int)Convert.ToInt64(dias) ;
             EstablecerValorLabel(ctrlConclusion, (Math.Truncate(acumCorrectivo / numeroDias * 100) /100).ToString(), (Math.Truncate(acumPreventivo / numeroDias * 100) / 100).ToString()) ; ;
 
         }
 
-        public void EstablecerValorLabel(Control miControl, string valor, string valor2)
+        public void EstablecerValorLabel(ControlConclusion miControl, string valor, string valor2)
         {
             Label miLabel = miControl.Controls["lblCostoAcumCorrectivo"] as Label;
             miLabel.Text = "$ " + valor;
@@ -34,7 +34,12 @@ namespace CorrectivoOPreventivo.Helpers.SimulacionMontecarlo
             {
                 miLabel3.Text = "Es conveniente optar por la estrategia de Mantenimiento Correctivo, ya que provee un menor costo promedio diario a comparación al Mantenimiento Preventivo";
             }
-            
+
+            miControl.lblHorasMC.Text = (Convert.ToInt64(Program.DiasPerdidosCorrectivoMC) * 16).ToString() + "Hs";
+            miControl.lblHorasMP.Text = (Convert.ToInt64(Program.DiasPerdidosCorrectivoMP) * 16).ToString() + "Hs";
+            miControl.lblDiasReparacionesMP.Text = (Convert.ToDouble(Program.DiasPerdidosCorrectivoMP) / numeroDias).ToString();
+            miControl.lblDiasReparacionesMC.Text = (Convert.ToDouble(Program.DiasPerdidosCorrectivoMC) / numeroDias).ToString();
+            miControl.lblDiasPreventivo.Text = (Convert.ToDouble(Program.DiasPerdidosMantenimiento) / numeroDias).ToString();
         }
     }
 }

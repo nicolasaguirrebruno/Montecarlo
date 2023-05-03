@@ -117,12 +117,17 @@ namespace CorrectivoOPreventivo.Helpers.SimulacionMontecarlo
 
                         filaAnterior = filaActual;
 
+                        /// suponiendo que es el día de correctivo
+                        Program.DiasPerdidosCorrectivoMC += 1;
                       
                     }
 
 
-                    if (i == cant && i > hasta) {
-                        EstablecerFilaDataGridView(correctivo, filaActual);
+                    if (i == cant ) {
+                        if (i > hasta)
+                        {
+                            EstablecerFilaDataGridView(correctivo, filaActual);
+                        }
                         Program.acumCorrectivo = filaActual.Item8;
                     } 
 
