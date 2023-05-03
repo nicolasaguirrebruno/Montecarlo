@@ -91,7 +91,7 @@ namespace CorrectivoOPreventivo.Helpers.SimulacionMontecarlo
                     // Comprueba si esta dentro del intervalo solicitado el usuario para mostrarlo en la tabla
                     EstaDentroIntervalo(i, desde, hasta, filaActual, preventivo);
 
-                 
+
 
                 }
                 // Se establece la fila actual para el dia especifico
@@ -118,12 +118,13 @@ namespace CorrectivoOPreventivo.Helpers.SimulacionMontecarlo
                 filaActual = (i, 0.0, filaAnterior.Item3 - 1, filaAnterior.Item4, filaAnterior.Item5 - 1, filaAnterior.Item6, "Si", "No", i, filaAnterior.Item10, 1100, filaAnterior.Item12, (filaAnterior.Item13 + 1100));
 
 
+
                 // Comprueba si esta dentro del intervalo solicitado el usuario para mostrarlo en la tabla
                 EstaDentroIntervalo(i, desde, hasta, filaActual, preventivo);
 
 
-              
-
+                // considerando que sea un día de arreglo, sumo uno al día perdido 
+                Program.DiasPerdidosCorrectivoMP += 1; 
 
             }
             // retorno la fila actual porque sino nunca se va a actualizar en el metodo general de esta clase, lo que llevaria a un error.
@@ -160,6 +161,10 @@ namespace CorrectivoOPreventivo.Helpers.SimulacionMontecarlo
                     // Setea la fila anterior como la actual, explicado en el metodo principal a detalle.
                     filaAnterior = filaActual;
 
+
+
+
+
                 }
                 // Se establece la fila actual para el dia especifico
                 else
@@ -189,7 +194,9 @@ namespace CorrectivoOPreventivo.Helpers.SimulacionMontecarlo
                 // Comprueba si esta dentro del intervalo solicitado el usuario para mostrarlo en la tabla
                 EstaDentroIntervalo(i, desde, hasta, filaActual, preventivo);
 
+                // considerando que el día es el de mantenimiento, aumento uno el contador de días mantenidos 
 
+                Program.DiasPerdidosMantenimiento += 1; 
 
             }
             // retorno la fila actual porque sino nunca se va a actualizar en el metodo general de esta clase, lo que llevaria a un error.

@@ -15,6 +15,9 @@ namespace CorrectivoOPreventivo.Controles
 {
     public partial class ControlConclusion : UserControl
     {
+        public static double DperdidosCorrectivo = Program.DiasPerdidosCorrectivoMC;
+        public static double DperdidosPreventivo = Program.DiasPerdidosCorrectivoMP;
+        public static double DMantenidos = Program.DiasPerdidosMantenimiento;
         public static double correctivo = Program.acumCorrectivo;
         public static double preventivo = Program.acumPreventivo;
 
@@ -23,12 +26,17 @@ namespace CorrectivoOPreventivo.Controles
         {
             InitializeComponent();
             CargarConclusion();
+
         }
 
         private void CargarConclusion()
         {
             var conclusion = new Conclusion();
-            
+            DperdidosCorrectivo = Program.DiasPerdidosCorrectivoMC;
+            DperdidosPreventivo = Program.DiasPerdidosCorrectivoMP;
+            DMantenidos = Program.DiasPerdidosMantenimiento;
+            correctivo = Program.acumCorrectivo;
+            preventivo = Program.acumPreventivo;
             conclusion.CalcularMetricas(Program.dias, correctivo, preventivo, this);
         }
 

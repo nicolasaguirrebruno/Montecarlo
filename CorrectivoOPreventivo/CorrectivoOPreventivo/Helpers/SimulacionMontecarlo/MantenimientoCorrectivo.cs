@@ -117,6 +117,8 @@ namespace CorrectivoOPreventivo.Helpers.SimulacionMontecarlo
 
                         filaAnterior = filaActual;
 
+                        /// suponiendo que es el día de correctivo
+                        Program.DiasPerdidosCorrectivoMC += 1;
                       
                     }
 
