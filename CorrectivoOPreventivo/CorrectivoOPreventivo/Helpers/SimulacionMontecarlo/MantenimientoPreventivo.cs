@@ -267,9 +267,10 @@ namespace CorrectivoOPreventivo.Helpers.SimulacionMontecarlo
 
 
                 // Si el dia es el ultimo se devuelve siempre porque es lo que pide el enunciado
-                if (i == cant)
+                if (i == cant && i > hasta)
                 {
                     EstablecerFilaDataGridView(preventivo, filaActual);
+                    Program.acumPreventivo = filaActual.Item13;
                 }
 
 

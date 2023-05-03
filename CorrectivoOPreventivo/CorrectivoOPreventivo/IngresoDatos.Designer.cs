@@ -63,7 +63,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(167, 20);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Cantidad de dias a simular";
+            this.label1.Text = "Cantidad de días a simular";
             // 
             // inputCantDias
             // 
@@ -116,9 +116,9 @@
             this.lblHasta.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblHasta.Location = new System.Drawing.Point(439, 88);
             this.lblHasta.Name = "lblHasta";
-            this.lblHasta.Size = new System.Drawing.Size(84, 20);
+            this.lblHasta.Size = new System.Drawing.Size(88, 20);
             this.lblHasta.TabIndex = 4;
-            this.lblHasta.Text = "Mostar hasta";
+            this.lblHasta.Text = "Mostrar hasta";
             // 
             // imageList1
             // 
@@ -149,7 +149,7 @@
             this.btnInitializeSimulation.Name = "btnInitializeSimulation";
             this.btnInitializeSimulation.Size = new System.Drawing.Size(264, 95);
             this.btnInitializeSimulation.TabIndex = 10;
-            this.btnInitializeSimulation.Text = "Iniciar Simulacion";
+            this.btnInitializeSimulation.Text = "Iniciar Simulación";
             this.btnInitializeSimulation.UseVisualStyleBackColor = false;
             this.btnInitializeSimulation.Click += new System.EventHandler(this.btnInitializeSimulation_Click_1);
             // 
@@ -193,7 +193,7 @@
             this.lblErrorHasta.Name = "lblErrorHasta";
             this.lblErrorHasta.Size = new System.Drawing.Size(169, 15);
             this.lblErrorHasta.TabIndex = 13;
-            this.lblErrorHasta.Text = "Este valor no puede estar vacio";
+            this.lblErrorHasta.Text = "Este valor no puede estar vacío";
             // 
             // lblErrorDesde
             // 
@@ -203,7 +203,7 @@
             this.lblErrorDesde.Name = "lblErrorDesde";
             this.lblErrorDesde.Size = new System.Drawing.Size(169, 15);
             this.lblErrorDesde.TabIndex = 12;
-            this.lblErrorDesde.Text = "Este valor no puede estar vacio";
+            this.lblErrorDesde.Text = "Este valor no puede estar vacío";
             // 
             // lblErrorCantDias
             // 
@@ -213,7 +213,7 @@
             this.lblErrorCantDias.Name = "lblErrorCantDias";
             this.lblErrorCantDias.Size = new System.Drawing.Size(169, 15);
             this.lblErrorCantDias.TabIndex = 11;
-            this.lblErrorCantDias.Text = "Este valor no puede estar vacio";
+            this.lblErrorCantDias.Text = "Este valor no puede estar vacío";
             // 
             // pnContenido
             // 
@@ -252,6 +252,7 @@
             // 
             this.btnConclusion.BackColor = System.Drawing.Color.Coral;
             this.btnConclusion.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnConclusion.Enabled = false;
             this.btnConclusion.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.btnConclusion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConclusion.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -261,7 +262,7 @@
             this.btnConclusion.Name = "btnConclusion";
             this.btnConclusion.Size = new System.Drawing.Size(448, 100);
             this.btnConclusion.TabIndex = 13;
-            this.btnConclusion.Text = "Conclusion";
+            this.btnConclusion.Text = "Conclusión";
             this.btnConclusion.UseVisualStyleBackColor = false;
             this.btnConclusion.Click += new System.EventHandler(this.btnConclusion_Click);
             // 
@@ -310,7 +311,9 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MinimumSize = new System.Drawing.Size(1364, 600);
             this.Name = "IngresoDatos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "IngresoDatos";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.IngresoDatos_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

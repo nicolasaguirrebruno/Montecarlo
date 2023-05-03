@@ -121,8 +121,9 @@ namespace CorrectivoOPreventivo.Helpers.SimulacionMontecarlo
                     }
 
 
-                    if (i == cant) {
+                    if (i == cant && i > hasta) {
                         EstablecerFilaDataGridView(correctivo, filaActual);
+                        Program.acumCorrectivo = filaActual.Item8;
                     } 
 
                    
@@ -132,6 +133,8 @@ namespace CorrectivoOPreventivo.Helpers.SimulacionMontecarlo
                 
 
             }
+
+            
         }
     }
 }
