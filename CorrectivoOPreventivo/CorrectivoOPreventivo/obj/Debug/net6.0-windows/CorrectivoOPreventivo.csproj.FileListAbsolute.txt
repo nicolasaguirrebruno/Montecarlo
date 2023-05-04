@@ -26,7 +26,6 @@ C:\Users\usuario\Desktop\UTN-SISTEMAS\4to\sim\TPs\TP3\Montecarlo\CorrectivoOPrev
 C:\Users\usuario\Desktop\UTN-SISTEMAS\4to\sim\TPs\TP3\Montecarlo\CorrectivoOPreventivo\CorrectivoOPreventivo\obj\Debug\net6.0-windows\CorrectivoOPreventivo.Controles.ControlMantenimientoCorrectivo.resources
 C:\Users\usuario\Desktop\UTN-SISTEMAS\4to\sim\TPs\TP3\Montecarlo\CorrectivoOPreventivo\CorrectivoOPreventivo\obj\Debug\net6.0-windows\CorrectivoOPreventivo.Controles.ControlMantenimientoPreventivo.resources
 C:\Users\usuario\Desktop\UTN-SISTEMAS\4to\sim\TPs\TP3\Montecarlo\CorrectivoOPreventivo\CorrectivoOPreventivo\obj\Debug\net6.0-windows\CorrectivoOPreventivo.IngresoDatos.resources
-C:\Users\usuario\Desktop\UTN-SISTEMAS\4to\sim\TPs\TP3\Montecarlo\CorrectivoOPreventivo\CorrectivoOPreventivo\obj\Debug\net6.0-windows\CorrectivoOPreventivo.Montecarlo.resources
 C:\Users\usuario\Desktop\UTN-SISTEMAS\4to\sim\TPs\TP3\Montecarlo\CorrectivoOPreventivo\CorrectivoOPreventivo\obj\Debug\net6.0-windows\CorrectivoOPreventivo.Properties.Resources.resources
 C:\Users\usuario\Desktop\UTN-SISTEMAS\4to\sim\TPs\TP3\Montecarlo\CorrectivoOPreventivo\CorrectivoOPreventivo\obj\Debug\net6.0-windows\CorrectivoOPreventivo.csproj.GenerateResource.cache
 C:\Users\usuario\Desktop\UTN-SISTEMAS\4to\sim\TPs\TP3\Montecarlo\CorrectivoOPreventivo\CorrectivoOPreventivo\obj\Debug\net6.0-windows\CorrectivoOPreventivo.GeneratedMSBuildEditorConfig.editorconfig

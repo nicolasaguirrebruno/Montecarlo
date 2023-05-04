@@ -19,6 +19,7 @@ namespace CorrectivoOPreventivo.Helpers.SimulacionMontecarlo
 
         public void EstablecerValorLabel(ControlConclusion miControl, string valor, string valor2)
         {
+            //seteamos cuanto gastamos por dia en cada caso
             Label miLabel = miControl.Controls["lblCostoAcumCorrectivo"] as Label;
             miLabel.Text = "$ " + valor;
 
@@ -26,7 +27,10 @@ namespace CorrectivoOPreventivo.Helpers.SimulacionMontecarlo
             miLabel2.Text = "$ " + valor2;
 
             Label miLabel3 = miControl.Controls["lblEstrategia"] as Label;
-            if(Double.Parse(valor) > Double.Parse(valor2))
+            
+            
+            //determinamos cual es la estrategia mas conveniente según el gasto
+            if (Double.Parse(valor) > Double.Parse(valor2))
             {
                 miLabel3.Text = "Es conveniente optar por la estrategia de Mantenimiento Preventivo, ya que provee un menor costo promedio diario a comparación al Mantenimiento Correctivo";
             }
@@ -34,11 +38,13 @@ namespace CorrectivoOPreventivo.Helpers.SimulacionMontecarlo
             {
                 miLabel3.Text = "Es conveniente optar por la estrategia de Mantenimiento Correctivo, ya que provee un menor costo promedio diario a comparación al Mantenimiento Preventivo";
             }
-
+            //seteamos la cantidad de Horas que gasto cada opción
             miControl.lblHorasMC.Text = (Convert.ToInt64(Program.DiasPerdidosCorrectivoMC) * 16).ToString() + "Hs";
             miControl.lblHorasMP.Text = (Convert.ToInt64(Program.DiasPerdidosCorrectivoMP) * 16).ToString() + "Hs";
+            //seteamos el porcentaje de reparaciones que tuvo cada opcion
             miControl.lblDiasReparacionesMP.Text = ((Double)Math.Truncate((Convert.ToDouble(Program.DiasPerdidosCorrectivoMP) *100 / numeroDias)*10_000)/10_000).ToString() +"%";
             miControl.lblDiasReparacionesMC.Text = ((Double)Math.Truncate((Convert.ToDouble(Program.DiasPerdidosCorrectivoMC) *100/ numeroDias) * 10_000)/ 10_000).ToString() + "%";
+            //seteamos el porcentaje de mantenimientos preventivos
             miControl.lblDiasPreventivo.Text = ((Double)Math.Truncate((Convert.ToDouble(Program.DiasPerdidosMantenimiento) *100/ numeroDias) * 10_000) / 10_000).ToString() +"%";
         }
     }

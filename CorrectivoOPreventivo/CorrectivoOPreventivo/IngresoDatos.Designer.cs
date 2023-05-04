@@ -273,6 +273,7 @@
             this.btnPreventivo.BackColor = System.Drawing.Color.Coral;
             this.btnPreventivo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPreventivo.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnPreventivo.Enabled = false;
             this.btnPreventivo.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.btnPreventivo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPreventivo.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -291,6 +292,7 @@
             this.btnCorrectivo.BackColor = System.Drawing.Color.Coral;
             this.btnCorrectivo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCorrectivo.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnCorrectivo.Enabled = false;
             this.btnCorrectivo.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.btnCorrectivo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCorrectivo.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);

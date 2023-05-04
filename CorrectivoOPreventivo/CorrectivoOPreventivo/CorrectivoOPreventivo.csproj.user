@@ -13,8 +13,5 @@
     <Compile Update="IngresoDatos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Montecarlo.cs">
-      <SubType>Form</SubType>
-    </Compile>
   </ItemGroup>
 </Project>

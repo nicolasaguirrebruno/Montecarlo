@@ -35,6 +35,8 @@ namespace CorrectivoOPreventivo
                 ReiniciarContadores();
                 CargarValores();
                 btnConclusion.Enabled = true;
+                btnPreventivo.Enabled = true;
+                btnCorrectivo.Enabled = true;
             }
            
         }
@@ -197,15 +199,30 @@ namespace CorrectivoOPreventivo
             if (inputCantDias.Text == "")
             {
                 this.lblErrorCantDias.Visible = true;
+                //si se modifico en algun momento el inpuDesde
+                //se calida que su contenido siga teniendo sentido
+                if (inputDesde.Modified)
+                {
+                    ValidarDesde();
+                }
+
+
                 return false;
             }
             this.lblErrorCantDias.Visible = false;
+            //si se modifico en algun momento el inpuDesde
+            //se calida que su contenido siga teniendo sentido
+            if (inputDesde.Modified)
+            {
+                ValidarDesde();
+            }
             return true;
         }
 
         private void inputDesde_TextChanged(object sender, EventArgs e)
         {
             ValidarDesde();
+
         }
         private bool ValidarDesde()
         {

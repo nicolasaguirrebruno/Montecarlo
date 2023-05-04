@@ -31,7 +31,10 @@ namespace CorrectivoOPreventivo.Helpers.SimulacionMontecarlo
         }
 
 
-
+        /// <summary>
+        /// Nos dice si el dia simulado esta dentro del intervalo que se deve mostrar
+        /// y lo agrega a la tabla
+        /// </summary>
         private bool EstaDentroIntervalo(int i, double desde, double hasta, (int, double, int, int, int, int, string, string, double, int, int, double, double)  fila, DataGridView preventivo)
         {
             if (i >= desde && i <= hasta)
@@ -44,7 +47,9 @@ namespace CorrectivoOPreventivo.Helpers.SimulacionMontecarlo
         }
 
 
-
+        ///<summary>
+        ///transforma la tupla de la fila en un arreglo de string y la agrega al datagridview
+        ///</summary>
         public void EstablecerFilaDataGridView(DataGridView preventivo, (int, double, int, int, int,int, string, string, double,int, int, double, double) fila)
         {
             // Paso a string todo para ponerlo en la tabla porque nomas acepta strings
@@ -68,8 +73,8 @@ namespace CorrectivoOPreventivo.Helpers.SimulacionMontecarlo
             preventivo.Rows.Add(row);
         }
 
-
-        private  (int, double, int, int, int, int, string, string, double, int, int, double, double)  SimularReparacion(Random rand, double desde, double hasta, int i, (int, double, int, int, int, int, string, string, double, int, int, double, double) filaActual, (int, double, int, int, int, int, string, string, double, int, int, double, double) filaAnterior, DataGridView preventivo)
+       
+        private (int, double, int, int, int, int, string, string, double, int, int, double, double)  SimularReparacion(Random rand, double desde, double hasta, int i, (int, double, int, int, int, int, string, string, double, int, int, double, double) filaActual, (int, double, int, int, int, int, string, string, double, int, int, double, double) filaAnterior, DataGridView preventivo)
         {
             //Esto evalua que el dia actual sea distinto al dia del arreglo
             if (i != filaAnterior.Item4)
@@ -206,8 +211,11 @@ namespace CorrectivoOPreventivo.Helpers.SimulacionMontecarlo
 
 
 
-
-            public void CalcularPreventivo(double cant, double desde, double hasta, DataGridView preventivo)
+        /// <summary>
+        /// Metodo que se encarga de hacer la simulacion de montecarlo Para el mantenimiento Preventivo
+        /// grabando en el datagridview el intervalo solicitado
+        /// </summary>
+        public void CalcularPreventivo(double cant, double desde, double hasta, DataGridView preventivo)
         {
             Random rand = new Random();
 
@@ -246,7 +254,9 @@ namespace CorrectivoOPreventivo.Helpers.SimulacionMontecarlo
                 }
                 else
                 {
-                    // Si no es el primer dia de la simulacion se mira si el dia de arreglo es menor o igual al dia de mantenimiento (no los que faltan para llegar a esa fecha, sino el dia efectivo de arreglo y mantenimiento), esto coincide con lo que dice el enunciado de que si se rompe antes del mantenimiento se arregla y se reinicia el ciclo
+                    // Si no es el primer dia de la simulacion se mira si el dia de arreglo es menor o igual al dia de mantenimiento
+                    // (no los que faltan para llegar a esa fecha, sino el dia efectivo de arreglo y mantenimiento),
+                    // esto coincide con lo que dice el enunciado de que si se rompe antes del mantenimiento se arregla y se reinicia el ciclo
                     // Tambien aclara que si se rompe el mismo dia del mantenimiento se toma el arreglo y no el mantenimiento por tanto se pone la condicion igual
                     if (filaAnterior.Item4 <= filaAnterior.Item6 )
                     {
